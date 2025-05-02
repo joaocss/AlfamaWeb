@@ -1,0 +1,115 @@
+
+
+@media (max-width: 768px) {
+    .btn-primary,
+    .google-login-btn {
+        font-size: 0.9rem;
+        padding: 10px;
+        width: 100%; /* Mantém a responsividade */
+        max-width: 400px; /* Define um limite sem exagerar */
+    }
+}
+
+@media (min-width: 769px) {
+    .btn-primary,
+    .google-login-btn {
+        font-size: 1rem;
+        padding: 12px;
+        width: 100%;
+        max-width: 600px; /* Aumenta em telas maiores */
+    }
+}
+.login-page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui melhor os elementos */
+}
+
+/* Botão "Política de Privacidade" mais abaixo e responsivo */
+.politica-privacidade {
+    position: absolute;
+    bottom: 10px; /* Mais próximo da borda inferior */
+    left: 20px;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .politica-privacidade {
+        bottom: 5px; /* Ajuste para telas menores */
+        left: 10px;
+    }
+}
+
+/* Ajustando o tamanho dos botões para ficarem iguais aos inputs */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+/* Tornando o botão Google um pouco mais fino */
+.google-login-btn {
+    width: 100%;
+    padding: 10px; /* Reduzindo ligeiramente a altura */
+    font-size: 0.95rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .btn-primary,
+    .google-login-btn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+/* Diminuindo o tamanho do formulário */
+.login-form-container {
+    max-width: 380px; /* Ajuste para um tamanho menor */
+    width: 100%;
+    padding: 1.5rem;
+}
+
+/* Posicionamento da logo e do botão */
+.form-header {
+    display: flex;
+    justify-content: space-between; /* Mantém os elementos nos extremos */
+    align-items: center;
+    width: 100%;
+}
+
+/* Garantindo que a logo fique no extremo esquerdo */
+.logo {
+    flex: 1;
+    text-align: left;
+}
+
+/* Mantendo o botão "Saiba Mais" no extremo direito */
+.saiba-mais-btn {
+    flex: 1;
+    text-align: right;
+}
+
+/* Ajuste para manter a divisão da tela equilibrada */
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 768px) {
+    .login-form-container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+}

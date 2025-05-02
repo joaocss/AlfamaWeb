@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - [Prova WEB]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../folhas/estilo.css">
+</head>
+<body>
+    <div class="container-fluid login-page">
+        <div class="row flex-column-reverse flex-md-row min-vh-100">
+
+            <!-- Formulário -->
+            <div class="col-md-4 d-flex flex-column justify-content-center login-form-container px-5 py-4">
+                <div class="form-header mb-4">
+                    <div class="logo">
+                        <img src="../imagens/logo.svg" alt="[Alfama Web]" class="img-fluid">
+                    </div>
+                    <div class="saibalogin-mais-container">
+                    <a href="tecnologia_imobiliaria.html" class="btn btn-outline-primary saibalogin-mais-btn">Saiba Mais</a>
+                </div>
+                </div>
+
+                <h1 class="login-title mb-3">Fazer login</h1>
+
+                <div class="text-center mt-3">
+                    <p class="register-text mb-0">
+                        <span class="fw-bold">Nova conta? </span> 
+                        <a href="../views/index.html" class="fw-bold text-decoration-none">Cadastre-se gratuitamente</a>
+                    </p>
+                </div>
+
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="Digite seu email">
+                        <div class="invalid-feedback" id="emailError"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha" required placeholder="Sua senha">
+                        <div class="invalid-feedback" id="senhaError"></div>
+                    </div>
+                    <div class="mb-3">
+                        <a href="../views/esqueci_senha.php">Esqueceu sua senha?</a>
+                    </div>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <button type="submit" class="btn btn-primary" id="loginBtn">Entrar</button>
+                        <a href="../controllers/GoogleAuthController.php" class="btn btn-outline-secondary google-login-btn">
+                            <img src="../imagens/google.png" alt="Google logo" width="20" class="me-2">
+                            Entrar com a conta Google
+                        </a>
+                    </div>
+                </form>
+
+                <div class="mt-4 text-center">
+                    <a href="politica_privacidade.html">Política de Privacidade</a>
+                </div>
+            </div>
+
+            <!-- Carrossel -->
+            <div class="col-md-8 carousel-section p-0">
+                <div class="carousel-caption-custom">Descubra os benefícios de ser nosso cliente</div>
+                <div id="imageCarousel" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="5000">
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active">
+                            <img src="../imagens/imagem-2.png" alt="Imagem Destaque 1" class="d-block w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagens/Imagem.png" alt="Imagem Destaque 2" class="d-block w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/login.js"></script>
+</body>
+</html>

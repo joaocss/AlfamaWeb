@@ -1,0 +1,180 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo-header img { height: 30px; }
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+.logo {
+    position: absolute;
+    top: 10px;  /* Subindo mais no topo */
+    left: 10px; /* Mantendo no canto esquerdo */
+}
+
+.saibalogin-mais-container {
+    position: absolute;
+    top: 4px;
+    right: 68%;
+    z-index: 10;
+}
+.login-page {
+    background-color: #f8f9fa;
+}
+
+
+
+.login-title {
+    text-align: left; /* Alinha à esquerda */
+    font-size: 1.8rem; /* Reduzindo um pouco */
+    margin-left: 10px; /* Adicionando espaço para não ficar colado à borda */
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.register-text {
+    font-size: 0.9rem;
+    color: #191818;
+}
+
+.google-login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left; /* Alinhando à esquerda */
+    margin-left: 10px; /* Adicionando espaço para não ficar colado à borda */   
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.saibalogin-mais-btn a {
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+.saibalogin-mais-btn:hover a {
+    color: #fff;
+}
+
+.carousel-section {
+    position: relative;
+}
+
+.carousel-caption-custom {
+    position: absolute;
+    bottom: 10px; /* Fixando na parte inferior da tela */
+    left: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 10;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+
+    
+}
+
+@media (max-width: 768px) {
+    .carousel-caption-custom {
+        font-size: 1.2rem;
+        left: 20px;
+        top: 20px;
+    }
+}
+
+
+.form-header {
+    margin-bottom: 2rem;
+}
+
+.form-header .logo img {
+    max-width: 160px;
+}
+
+/* Ajusta o botão "Saiba mais" */
+
+
+/* Espaçamento entre o texto de cadastro e o formulário */
+.register-text {
+    margin-bottom: 2rem !important;
+    font-weight: bold;
+}
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha mais para cima */
+    padding-top: 0.5rem; /* Reduzindo o espaço superior */
+    min-height: 90vh; /* Mantém ele preenchendo bem a tela */
+}
+
+/* Posicionamento mais alto do logo e botão saiba mais */
+
+/* Posicionamento da logo */
+.logo img {
+    max-width: 160px;
+    margin-bottom: 0.5rem;
+}
+
+/* Espaço abaixo do botão Saiba Mais */
+.saibalogin-mais-btn {
+    margin-top: 0.5rem;
+    
+}
+
+/* Espaçamento do título e formulário */
+.login-title {
+    font-size: 1.8rem; /* Reduzindo um pouco */
+    text-align: left; /* Alinha à esquerda */
+    margin-left: 10px; /* Adicionando espaço para não ficar colado à borda */
+    margin-top: -200px; /* Subindo um pouco mais */
+    font-size: 2rem;
+}
+
+/* Espaço entre o formulário e o texto "Nova conta?" */
+.register-text {
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+    text-align: left; /* Alinha à esquerda */
+    margin-left: 10px; /* Adiciona espaçamento para não ficar colado na borda */
+    font-weight: bold;
+    
+}
+
+/* Botão Google espaçamento */
+.google-login-btn {
+    margin-top: 0.5rem;
+}
+.form-label {
+    font-weight: bold; /* Torna o texto em negrito */
+    color: #262424; /* Cor preta intensa */
+}
+/* Centraliza o texto do carrossel na parte inferior */
+.carousel-caption-custom {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 10;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Garante que o carrossel preenche toda a altura */
+.carousel-section .carousel,
+.carousel-section .carousel-inner,
+.carousel-section .carousel-item,
+.carousel-section img {
+    height: 100%;
+}
