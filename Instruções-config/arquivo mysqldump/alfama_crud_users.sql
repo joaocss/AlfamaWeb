@@ -1,3 +1,30 @@
+
+-- Criar banco de dados
+CREATE DATABASE IF NOT EXISTS alfama_crud CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE alfama_crud;
+
+-- Criar tabela `users`
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  `cpf` varchar(20) DEFAULT NULL,
+  `empresa` varchar(100) DEFAULT NULL,
+  `endereco` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `google_id` varchar(255) DEFAULT NULL,
+  `reset_token` varchar(64) DEFAULT NULL,
+  `reset_expira` datetime DEFAULT NULL,
+  `foto_perfil` varchar(255) DEFAULT NULL,
+  `imagem_path` varchar(255) DEFAULT NULL COMMENT 'Caminho da imagem no sistema de arquivos',
+  `imagem_blob` longblob DEFAULT NULL COMMENT 'Dados binários da imagem (backup)',
+  `imagem_type` varchar(50) DEFAULT NULL COMMENT 'Tipo MIME da imagem',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 -- MySQL dump 10.13  Distrib 8.0.41, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: alfama_crud
